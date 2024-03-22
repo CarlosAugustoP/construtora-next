@@ -6,7 +6,8 @@ import FeaturedPost from '../FeaturedPost';
 import Intro from '../Intro';
 import QuemSomos from '../QuemSomos';
 import Footer from '../Footer';
-
+import {FeaturedPostMobile} from '../FeaturedPost/mobile';
+import {Mobile} from '../PostHeader/mobile'; 
 export default function App() {
 
   const [isLargeScreen, setIsLargeScreen] = useState(false);
@@ -32,7 +33,7 @@ export default function App() {
         </>
       ) : (
         // Replace these components with whatever you want to render instead
-        <div>Your alternative content for smaller screens here</div>
+        <Mobile />
       )}
       <QuemSomos />
       <Contato />
