@@ -77,6 +77,8 @@ export default function FeaturedPost() {
 
   const post = getCurrentPost();
 
+  console.log(post.image)
+
   return (
     <div
       id = "Empreendimentos"

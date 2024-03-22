@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { PostContainer, LeftArrow, RightArrow, ScrollingContent } from './styles';
-import Arrow from '../../../../public/img/arrow.svg';
 import { posts, posts2, posts3} from './posts';
 import { animated, useSpring } from 'react-spring';
 import { useEffect } from 'react';
@@ -172,11 +171,11 @@ export default function PostHeader(props){
           gap: '20px',
         }}
       >
-        <LeftArrow onClick={handlePreviousGrid} src={Arrow} />
+        <LeftArrow onClick={handlePreviousGrid} src="img/arrow.svg" />
         <ScrollingContent>
           <PostGrid posts={getPostsForGrid()} side={side}/>
         </ScrollingContent>
-        <RightArrow onClick={handleNextGrid} src={Arrow} />
+        <RightArrow onClick={handleNextGrid} src="img/arrow.svg" />
       </div>
     </>
   );

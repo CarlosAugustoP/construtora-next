@@ -1,6 +1,5 @@
 import React from 'react'
 import { Container, CreditsContainer } from './styles'  
-import Linkedin from '../../../../public/img/linkedin.svg'  
 
 export default function Footer() {
     const Credit = ({ name, link }) => {
@@ -8,7 +7,7 @@ export default function Footer() {
             <CreditsContainer>
                 <a style = {{gap: "5px",color:"white",textDecoration:"none", display: "flex", justifyContent:"center", alignItems: "center"}} href={link} target="_blank">
                 <p>{name}</p>
-                    <img src={Linkedin} alt="Linkedin" />
+                    <img src="img/linkedin.svg" alt="Linkedin" />
                 </a>
             </CreditsContainer>
         )

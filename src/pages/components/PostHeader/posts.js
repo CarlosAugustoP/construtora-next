@@ -9,7 +9,7 @@ export const posts = ([
     city: "Gravatá - PE",
     rooms: "1 quarto | 2 suítes",
     highlightedPhrase: "Vista para montanhas com piscina aquecida",
-    image: TestImageHouse,
+    image: "img/TestImageHouse.png",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const posts = ([
     city: "Recife - PE",
     rooms: "2 quartos | 1 suíte | 1 jacuzzi",
     highlightedPhrase: "Varanda com vista para o mar",
-    image: TestImageHouse,
+    image: "img/TestImageHouse.png",
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ export const posts = ([
     valor: "R$ 1.000.000,00",
     rooms: "2 quartos | 1 suíte | 1 jacuzzi",
     highlightedPhrase: "Varanda com vista para o mar",
-    image: TestImageHouse,
+    image: "img/TestImageHouse.png",
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ export const posts = ([
     city: "Recife - PE",
     rooms: "2 quartos | 1 suíte | 1 jacuzzi",
     highlightedPhrase: "Varanda com vista para o mar",
-    image: TestImageHouse,
+    image: "img/TestImageHouse.png",
   },
   {
     id: 5,
@@ -44,7 +44,7 @@ export const posts = ([
     city: "Recife - PE",
     rooms: "2 quartos | 1 suíte | 1 jacuzzi",
     highlightedPhrase: "Varanda com vista para o mar",
-    image: TestImageHouse,
+    image: "img/TestImageHouse.png",
   },
   {
     id: 6,
@@ -53,7 +53,7 @@ export const posts = ([
     city: "Recife - PE",
     rooms: "2 quartos | 1 suíte | 1 jacuzzi",
     highlightedPhrase: "Varanda com vista para o mar",
-    image: TestImageHouse,
+    image: "img/TestImageHouse.png",
   }
 ]);
 
@@ -65,7 +65,7 @@ export const posts2 = ([
     city: "caruaru - PE",
     rooms: "2 quartos | 1 suíte | 1 jacuzzi",
     highlightedPhrase: "Varanda com vista para o mar",
-    image: TestImageHouse2,
+    image: "img/TestImageHouse2.png",
   },
   {
     id : 2,
@@ -74,7 +74,7 @@ export const posts2 = ([
     city: "caruaru - PE",
     rooms: "2 quartos | 1 suíte | 1 jacuzzi",
     highlightedPhrase: "Varanda com vista para o mar",
-    image: TestImageHouse2,
+    image: "img/TestImageHouse2.png",
   },
   {
     id : 3,
@@ -83,7 +83,7 @@ export const posts2 = ([
     city: "caruaru - PE",
     rooms: "2 quartos | 1 suíte | 1 jacuzzi",
     highlightedPhrase: "Varanda com vista para o mar",
-    image: TestImageHouse2,
+    image: "img/TestImageHouse2.png",
   },
   {
     id : 4,
@@ -92,7 +92,7 @@ export const posts2 = ([
     city: "Sei la",
     rooms: "2 quartos | 1 suíte | 1 jacuzzi",
     highlightedPhrase: "Varanda com vista para o mar",
-    image: TestImageHouse2,
+    image: "img/TestImageHouse2.png",
   },
   {
     id : 5,
@@ -101,7 +101,7 @@ export const posts2 = ([
     city: "Sei la",
     rooms: "2 quartos | 1 suíte | 1 jacuzzi",
     highlightedPhrase: "Varanda com vista para o mar",
-    image: TestImageHouse2,
+    image: "img/TestImageHouse2.png",
   }, 
   {
     id : 6,
@@ -110,7 +110,7 @@ export const posts2 = ([
     city: "Sei la",
     rooms: "2 quartos | 1 suíte | 1 jacuzzi",
     highlightedPhrase: "Varanda com vista para o mar",
-    image: TestImageHouse2,
+    image: "img/TestImageHouse2.png",
   }
 ]);
 
@@ -122,7 +122,7 @@ export const posts3 = ([
     city: "caruaru - PE",
     rooms: "2 quartos | 1 suíte | 1 jacuzzi",
     highlightedPhrase: "Varanda com vista para o mar",
-    image: TestImageHouse3,
+    image: "img/TestImageHouse3.png",
   },
   {
     id : 2,
@@ -131,7 +131,7 @@ export const posts3 = ([
     city: "caruaru - PE",
     rooms: "2 quartos | 1 suíte | 1 jacuzzi",
     highlightedPhrase: "Varanda com vista para o mar",
-    image: TestImageHouse3,
+    image: "img/TestImageHouse3.png",
   },
   {
     id : 3,
@@ -140,7 +140,7 @@ export const posts3 = ([
     city: "caruaru - PE",
     rooms: "2 quartos | 1 suíte | 1 jacuzzi",
     highlightedPhrase: "Varanda com vista para o mar",
-    image: TestImageHouse3,
+    image: "img/TestImageHouse3.png",
   },
   {
     id : 4,
@@ -149,7 +149,7 @@ export const posts3 = ([
     city: "Sei la",
     rooms: "2 quartos | 1 suíte | 1 jacuzzi",
     highlightedPhrase: "Varanda com vista para o mar",
-    image: TestImageHouse3,
+    image: "img/TestImageHouse3.png",
   },
   {
     id : 5,
@@ -158,7 +158,7 @@ export const posts3 = ([
     city: "Sei la",
     rooms: "2 quartos | 1 suíte | 1 jacuzzi",
     highlightedPhrase: "Varanda com vista para o mar",
-    image: TestImageHouse3,
+    image: "img/TestImageHouse3.png",
   }, 
   {
     id : 6,
@@ -167,7 +167,7 @@ export const posts3 = ([
     city: "Sei la",
     rooms: "2 quartos | 1 suíte | 1 jacuzzi",
     highlightedPhrase: "Varanda com vista para o mar",
-    image: TestImageHouse3,
+    image: "img/TestImageHouse3.png",
   }
 ]);
 
@@ -177,7 +177,7 @@ export const highlightedPosts = ([
   type: "Mansão",
   district: "Bairro Gramado",
   city: "Gravatá - PE",
-  image: TestImageHouse,
+  image: "img/TestImageHouse.png",
   description: " Essa bela mansão possui 4 quartos, 2 suítes, vista para as montanhas, piscina aquecida, amplo jardim e área gourmet"
 },
 {
@@ -185,7 +185,7 @@ export const highlightedPosts = ([
   type: "Casa",
   district: "indianópolis",
   city: "caruaru - PE",
-  image: TestImageHouse2,
+  image: "img/TestImageHouse2.png",
   description: "Essa linda casa possui 3 quartos, 2 suítes, jardim de inverno, sala de jogos, espaço gourmet com churrasqueira"
 },
 {
@@ -193,7 +193,7 @@ export const highlightedPosts = ([
   type: "Casa",
   district: "indianópolis",
   city: "caruaru - PE",
-  image: TestImageHouse3,
+  image: "img/TestImageHouse3.png",
   description: "Esse perfeito lar possui 2 quartos, 1 suíte master com hidromassagem, cozinha planejada, quintal com espaço gourmet"
 },
 ]);

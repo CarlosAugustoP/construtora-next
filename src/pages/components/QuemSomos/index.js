@@ -29,7 +29,7 @@ const ContentSection = ({ imgSrc, titleText, bodyText, direction = "row", backgr
         alignItems: 'center', 
         marginTop: '100px'
       }}>
-        <ContentSection imgSrc={photo1} titleText="Quem Somos?" bodyText={firstText} />
+        <ContentSection imgSrc="img/QuemSomosPhoto1.jpg" titleText="Quem Somos?" bodyText={firstText} />
       </div>
        <div style={{
         display: 'flex',
@@ -37,7 +37,7 @@ const ContentSection = ({ imgSrc, titleText, bodyText, direction = "row", backgr
         alignItems: 'center', 
         marginTop: '50px'
       }}>
-        <ContentSection imgSrc={photo1} direction = "row-reverse" titleText="Nossa História" bodyText={secondText} backgroundColor="rgb(238, 238, 238, 0.8)" color= "black"/>
+        <ContentSection imgSrc="img/QuemSomosPhoto1.jpg" direction = "row-reverse" titleText="Nossa História" bodyText={secondText} backgroundColor="rgb(238, 238, 238, 0.8)" color= "black"/>
       </div>
        <div style={{
         display: 'flex',
@@ -45,7 +45,7 @@ const ContentSection = ({ imgSrc, titleText, bodyText, direction = "row", backgr
         alignItems: 'center', 
         marginTop: '40px'
       }}>
-        <ContentSection imgSrc={photo1} titleText="Nossos Valores" bodyText={thirdText} />
+        <ContentSection imgSrc="img/QuemSomosPhoto1.jpg" titleText="Nossos Valores" bodyText={thirdText} />
       </div>
       </>
     );
