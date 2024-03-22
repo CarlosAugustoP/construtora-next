@@ -13,6 +13,12 @@ export const Content = styled(Container)`
     font-weight: 200;
     font-style: normal;
     gap:45px;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 942px) {
+        gap: 0px;
+    }
 `;
 
 export const SubNav = styled(Content)`
@@ -21,6 +27,11 @@ export const SubNav = styled(Content)`
     color: black;
     font-weight: 300;
     height: 40px;
+    display: flex;
+    @media (max-width: 942px) {
+        justify-content: flex-start;
+        
+    }
 `;
 
 export const ContactLogo = styled.img`
@@ -45,6 +56,11 @@ export const ContactLogo = styled.img`
             transform: rotate(360deg);
         }
     }
+
+    @media (max-width: 942px) {
+        width:25px;
+        height:25px;
+    }
 `;
 
 export const MainLogo = styled.img`
@@ -57,7 +73,12 @@ export const Span = styled.span`
     color: white;
     font-weight: 200;
     font-size: 20px;
+
+    @media (max-width: 942px) {
+     display: none;
+ }
     
+
 `;
 export const Nav = styled.nav`
     position: fixed;
@@ -77,3 +98,20 @@ export const A = styled.a`
         cursor: pointer;
     }
     `
+
+export const Info = styled.p`
+     @media (max-width: 942px) {
+     display: none;
+ }
+    
+`;
+
+export const FaleConosco = styled.span`
+    display: none;
+    @media (max-width: 942px) {
+        margin-left: 20px;
+        display: block;
+        font-weight: 300;
+        font-size: 20px;
+    }
+`;

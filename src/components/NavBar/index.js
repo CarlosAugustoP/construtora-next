@@ -1,4 +1,4 @@
-import { Container, Content, SubNav, ContactLogo, MainLogo, Span, Nav, A } from './styles';
+import { Container, Content, SubNav, ContactLogo, MainLogo, Span, Nav, A, Info, FaleConosco} from './styles';
 
 const ContactInfo = ({ src, alt, children }) => (
   <span
@@ -25,12 +25,14 @@ export default function Header({ scrollToSection }) {
           >
             <MainLogo src="/img/mainlogo.png" alt="Logo Peixoto e Vasconcelos"></MainLogo>
             <Content>
-            <Span><A href="#Empreendimentos">Empreendimentos</A></Span>
-            <Span><A href="#QuemSomos">Quem Somos</A></Span>
-            <Span><A href ="#Contato">Contato</A></Span>
+              <Span><A href="#Empreendimentos">Empreendimentos</A></Span>
+              <Span><A href="#QuemSomos">Quem Somos</A></Span>
+              <Span><A href ="#Contato">Contato</A></Span>
+              <img style = {{ width: "40px",height:"40px"}}src = "img/Hamburger.svg"></img>
             </Content>
           </Container>
           <SubNav>
+            <FaleConosco>Fale Conosco!</FaleConosco>
             <a 
               style = {{
                 textDecoration: 'none',
@@ -39,7 +41,7 @@ export default function Header({ scrollToSection }) {
               href="https://wa.me/5581992036473?text=Olá,%20estou%20interessado%20nos%20empreendimentos%20da%20Peixoto%20e%20Vasconcelos!"
             >
               <ContactInfo src="/img/phone-icon.svg" alt="Telefone de contato">
-                +5581992036473
+                <Info>+5581992036473</Info>
               </ContactInfo>
             </a>
             <a 
@@ -50,7 +52,7 @@ export default function Header({ scrollToSection }) {
               href="#Contato"
             >
               <ContactInfo src="/img/email-icon.svg" alt="Email de contato">
-                contato@peixotoevasconcelos.com
+                <Info>contato@peixotoevasconcelos.com</Info>
               </ContactInfo>
             </a>
             <a 
@@ -60,7 +62,7 @@ export default function Header({ scrollToSection }) {
               }}
               href="https://www.instagram.com/construtorapeixotoevasconcelos/" target="__blank">
               <ContactInfo src="/img/instagram-icon.svg" alt="Instagram de contato">
-                @peixotoevasconcelos
+                <Info>@peixotoevasconcelos</Info>
               </ContactInfo>
             </a>
           </SubNav>

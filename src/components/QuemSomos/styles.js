@@ -6,7 +6,7 @@ export const Container = styled.div`
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
     gap:20px;
     
-    @media (max-width: 768px) {
+    @media (max-width: 942px) {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
@@ -29,7 +29,7 @@ export const Container = styled.div`
      width: 100%;
  }
 
- @media (max-width: 768px) {
+ @media (max-width: 942px) {
      width: 100%; /* Take full width on small screens */
      height: auto; /* Adjust height automatically */
      
@@ -46,7 +46,7 @@ export const TextContainer = styled.div`
     width: 50%;
     padding: 20px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 942px) {
          /* Remove padding on small screens */
             padding: 0;
             width: 100%;
@@ -62,7 +62,7 @@ export const TextContainer = styled.div`
 export const Text = styled.p`
     font-weight: 200;
     font-size: 20px;
-    @media (max-width: 768px) {
+    @media (max-width: 942px) {
             position: relative;
             bottom:30px;
             padding-left: 10px;
