@@ -1,7 +1,4 @@
 import { Container, Content, SubNav, ContactLogo, MainLogo, Span, Nav, A } from './styles';
-import Email from '../../../../public/img/email-icon.svg';
-import Instagram from '../../../../public/img/instagram-icon.svg';
-import Phone from '../../../../public/img/phone-icon.svg';
 
 const ContactInfo = ({ src, alt, children }) => (
   <span

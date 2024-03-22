@@ -1,7 +1,3 @@
-import TestImageHouse from '../../../../public/img/TestImageHouse.png';
-import TestImageHouse2 from '../../../../public/img/TestImageHouse2.png';
-import TestImageHouse3 from '../../../../public/img/TestImageHouse3.png';
-
 export const posts = ([
   {
     id: 1,
