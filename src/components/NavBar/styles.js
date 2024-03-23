@@ -6,6 +6,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: row;
     background-color: black;
+    
 `;
 
 export const Content = styled(Container)`
@@ -15,10 +16,7 @@ export const Content = styled(Container)`
     gap:45px;
     display: flex;
     align-items: center;
-    img {
-        display: none;
-    }
-
+   
     @media (max-width: 942px) {
         gap: 0px;
 
