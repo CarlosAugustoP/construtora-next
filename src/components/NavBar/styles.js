@@ -31,13 +31,17 @@ export const Content = styled(Container)`
 `;
 
 export const SubNav = styled(Content)`
+
     background-color: #B0A494;
     width: 100%;
     color: black;
     font-weight: 300;
     height: 40px;
     display: flex;
-    @media (max-width: 942px) {
+    img {
+        display: block;
+    }
+        @media (max-width: 942px) {
         justify-content: flex-start;
         
     }
