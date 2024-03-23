@@ -6,7 +6,7 @@ import FeaturedPost from '../FeaturedPost';
 import Intro from '../Intro';
 import QuemSomos from '../QuemSomos';
 import Footer from '../Footer';
-import {FeaturedPostMobile} from '../FeaturedPost/mobile';
+import Test from '../NavBar/test';
 import {Mobile} from '../PostHeader/mobile'; 
 export default function App() {
 

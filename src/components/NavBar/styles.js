@@ -73,6 +73,13 @@ export const ContactLogo = styled.img`
     @media (max-width: 942px) {
         width:25px;
         height:25px;
+
+        &:hover {
+            animation: none;
+            
+        }
+
+
     }
 `;
 

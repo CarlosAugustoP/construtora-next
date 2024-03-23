@@ -11,7 +11,7 @@ export const Container = styled.div`
         justify-content: center;
         align-items: center;
         padding:10px;
-        padding-bottom: 30px;
+        padding-bottom: 25px;
         gap:0px;
 
     }
@@ -31,8 +31,8 @@ export const Container = styled.div`
  }
 
  @media (max-width: 942px) {
-     width: 100%; /* Take full width on small screens */
-     height: auto; /* Adjust height automatically */
+     width: 90%; 
+     height: auto;
      
      img {
          width: 90%; /* Adjust image width on small screens */
@@ -55,7 +55,8 @@ export const TextContainer = styled.div`
             flex-direction: column;
             align-items: center;
             position: relative;
-            top:10px;
+            font-size: 14px;
+            
     }
 
 `;
@@ -68,6 +69,7 @@ export const Text = styled.p`
             bottom:30px;
             padding-left: 10px;
             padding-right: 10px;
+            font-size: 15px;
     }
     
     `;
