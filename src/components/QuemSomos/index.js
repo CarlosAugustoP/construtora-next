@@ -4,31 +4,33 @@ const lorem ="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut ul
 const firstText = "A construtora Peixoto e Vasconcelos foi formada por um casal de engenheiro e arquiteta, que juntos, decidiram unir suas habilidades e conhecimentos para criar uma empresa que fosse capaz de realizar os sonhos de seus clientes, entregando obras de qualidade e com um design único. Desde então, Compromisso, competência e responsabilidade são a nossa marca. "
 const secondText = "Desde sua fundação em 1997, a Peixoto & Vasconcelos tem trilhado um caminho marcado por conquistas e dedicação ao seu propósito de construir com excelência. Ao longo dos anos, conquistamos a confiança de clientes e parceiros pela qualidade de nossos projetos e pela transparência de nossa equipe. Com uma trajetória de sucesso, continuamos nossa jornada para pessoas de todo o Nordeste."
 const thirdText = "Na Peixoto & Vasconcelos, construímos com integridade, excelência e respeito, buscando sempre superar as expectativas dos nossos clientes. Nosso compromisso com a qualidade e a transparência nos guia em cada projeto, sempre com uma abordagem centrada no cliente e uma equipe dedicada, empenhada em construir lares perfeitos, um projeto de cada vez."
-const ContentSection = ({ imgSrc, titleText, bodyText, direction = "row", backgroundColor= "rgb(18,18,18,0.8)", color = "white"}) => {
+export const ContentSection = ({ imgSrc, titleText, children, direction = "row", backgroundColor= "rgb(18,18,18,0.8)", color = "white"}) => {
   return (
-      <Container direction = {direction}  style={{ backgroundColor: backgroundColor, color: color }}>
+      <Container direction={direction} style={{ backgroundColor: backgroundColor, color: color }}>
         <TextContainer>
           <h1>{titleText}</h1>
-          <Text>{bodyText}</Text>
+          {/* This will render the form if children are passed to ContentSection */}
+          {children}
         </TextContainer>
         <ImageContainer>
           <img src={imgSrc} alt={titleText} />
         </ImageContainer>
       </Container>
-    );
-  };  
+  );
+};
+
     export default function QuemSomos() {
     return (
         <>
       <div 
-      id = "QuemSomos"
+      id="QuemSomos"
       style={{
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center', 
         marginTop: '100px'
       }}>
-        <ContentSection imgSrc="img/QuemSomosPhoto1.jpg" titleText="Quem Somos?" bodyText={firstText} />
+        <ContentSection imgSrc="img/QuemSomosPhoto1.jpg" titleText="Quem Somos?" children={<Text>{firstText}</Text>} />
       </div>
        <div style={{
         display: 'flex',
@@ -36,7 +38,7 @@ const ContentSection = ({ imgSrc, titleText, bodyText, direction = "row", backgr
         alignItems: 'center', 
         marginTop: '50px'
       }}>
-        <ContentSection imgSrc="img/QuemSomosPhoto1.jpg" direction = "row-reverse" titleText="Nossa História" bodyText={secondText} backgroundColor="rgb(238, 238, 238, 0.8)" color= "black"/>
+        <ContentSection imgSrc="img/QuemSomosPhoto1.jpg" direction = "row-reverse" titleText="Nossa História"children={<Text>{secondText}</Text>} backgroundColor="rgb(238, 238, 238, 0.8)" color= "black"/>
       </div>
        <div style={{
         display: 'flex',
@@ -44,7 +46,7 @@ const ContentSection = ({ imgSrc, titleText, bodyText, direction = "row", backgr
         alignItems: 'center', 
         marginTop: '40px'
       }}>
-        <ContentSection imgSrc="img/QuemSomosPhoto1.jpg" titleText="Nossos Valores" bodyText={thirdText} />
+        <ContentSection imgSrc="img/QuemSomosPhoto1.jpg" titleText="Nossos Valores" children={<Text>{thirdText}</Text>} />
       </div>
       </>
     );

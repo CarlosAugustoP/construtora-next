@@ -7,23 +7,24 @@ export const Title = styled.h1`
 `
 export const Container = styled.div`
   margin-top: 50px;
-  background-color: grey;;
   width: 100%;
-  height: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding-bottom: 15px;
   @media (max-width: 768px) {
-    height: 400px;
   }
 `;
 
 export const FormContainer = styled.form`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+
+  @media (max-width: 942px) {
+    align-items: center;
+  }
 `;
 
 export const InputContainer = styled.div`
@@ -34,22 +35,27 @@ export const InputContainer = styled.div`
   gap: 40px;
   position: relative;
 
-  @media (max-width: 768px) {
+  @media (max-width: 942px) {
     grid-template-columns: 1fr;
-    justify-items: center;
-    gap:10px;
+    gap: 20px;
   }
+
+
  
 `;
 
 export const InputField = styled.input`
-  width: 250px;
+  width: 190px;
   height: 20px;
   border: none;
   border-radius: 5px;
   padding: 5px;
   font-size: 12px;
   background-color: #f0f0f0;
+
+  @media (max-width: 942px) {
+    width: 250px;
+  }
 `;
 
 export const Button = styled.button`

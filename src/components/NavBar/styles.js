@@ -15,10 +15,19 @@ export const Content = styled(Container)`
     gap:45px;
     display: flex;
     align-items: center;
+    img {
+        display: none;
+    }
 
     @media (max-width: 942px) {
         gap: 0px;
+
+        img {
+            display: block;
+        }
     }
+
+    
 `;
 
 export const SubNav = styled(Content)`
