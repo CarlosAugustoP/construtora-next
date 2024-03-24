@@ -30,6 +30,13 @@ export default function Contato() {
 
     if (response.ok) {
       console.log("Email enviado com sucesso!");
+      setState({
+        nome: '',
+        email: '',
+        telefone: '',
+        mensagem: '',
+      });
+      alert("Email enviado com sucesso!");
     } else {
       console.error("Falha ao enviar o email.");
     }
@@ -50,7 +57,7 @@ export default function Contato() {
             {inputFields.map(({ label, type, id, name, required }) => (
               <div key={id} style={{ display: 'flex', flexDirection: 'column', fontSize: '15px' }}>
                 <label htmlFor={id}>{label}</label>
-                <InputField type={type} id={id} name={name} required={required} onChange={handleChange} />
+                <InputField type={type} id={id} name={name} required={required} value={state[name]} onChange={handleChange} />
               </div>
             ))}
           </InputContainer>

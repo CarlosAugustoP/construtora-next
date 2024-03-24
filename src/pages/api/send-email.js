@@ -16,7 +16,6 @@ export default async function handler(req, res) {
         text: 'Hello',
       });
       res.status(200).json({ status: 'Success' });
-      console.log(`${RESEND_API_KEY}`);
     } catch (error) {
       console.error('Error sending email:', error);
       res.status(500).json({ status: 'Error', message: error.message });
