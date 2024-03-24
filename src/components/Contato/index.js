@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { Container, FormContainer, InputContainer, Title, InputField, Button } from './styles';
 import { ContentSection } from '../QuemSomos';
+
 export default function Contato() {
-  
+
   const [state, setState] = useState({
     nome: '',
     email: '',
@@ -17,26 +18,21 @@ export default function Contato() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const name = state.nome;
-    const email = state.email;
-    const telephone = state.telefone;
-    const message = state.mensagem;
+    const { nome, email, telefone, mensagem } = state;
 
-    fetch('http://localhost:3001/send-email', {
+    const response = await fetch('/api/send-email', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ 
-        name: name, 
-        email: email, 
-        telephone: telephone, 
-        message: message 
-      })
-    })
-    .then(response => response.json())
-    .then(data => console.log(data))
-    .catch(err => console.log(err));
+      body: JSON.stringify({ name: nome, email, telephone: telefone, message: mensagem }),
+    });
+
+    if (response.ok) {
+      console.log("Email enviado com sucesso!");
+    } else {
+      console.error("Falha ao enviar o email.");
+    }
   }
 
   const inputFields = [
@@ -48,13 +44,13 @@ export default function Contato() {
 
   return (
     <Container id="Contato">
-      <ContentSection style = {{paddingBottom:"10px"}} imgSrc="img/QuemSomosPhoto1.jpg" titleText="Fale Conosco!" direction="row-reverse" backgroundColor='rgb(238, 238, 238, 0.8)'color="black">
+      <ContentSection style={{ paddingBottom: "10px" }} imgSrc="img/QuemSomosPhoto1.jpg" titleText="Fale Conosco!" direction="row-reverse" backgroundColor='rgb(238, 238, 238, 0.8)' color="black">
         <FormContainer onSubmit={handleSubmit}>
           <InputContainer>
             {inputFields.map(({ label, type, id, name, required }) => (
               <div key={id} style={{ display: 'flex', flexDirection: 'column', fontSize: '15px' }}>
                 <label htmlFor={id}>{label}</label>
-                <InputField type={type} id={id} name={name} required={required} onChange={handleChange}/>
+                <InputField type={type} id={id} name={name} required={required} onChange={handleChange} />
               </div>
             ))}
           </InputContainer>
@@ -65,5 +61,5 @@ export default function Contato() {
       </ContentSection>
     </Container>
   );
-  
+
 }
