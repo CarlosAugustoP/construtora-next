@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Container, FormContainer, InputContainer, Title, InputField, Button } from './styles';
 import { ContentSection } from '../QuemSomos';
+import toast from 'react-hot-toast';
 
 export default function Contato() {
 
@@ -36,9 +37,10 @@ export default function Contato() {
         telefone: '',
         mensagem: '',
       });
-      alert("Email enviado com sucesso!");
+      toast.success('Email enviado com sucesso!');
     } else {
-      console.error("Falha ao enviar o email.");
+      console.error('Falha ao enviar o email. Tente novamente mais tarde.');
+      toast.error('Falha ao enviar o email. Tente novamente mais tarde.');
     }
   }
 

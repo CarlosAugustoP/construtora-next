@@ -8,6 +8,8 @@ import QuemSomos from '../QuemSomos';
 import Footer from '../Footer';
 import Test from '../NavBar/test';
 import {Mobile} from '../PostHeader/mobile'; 
+import { Toaster } from 'react-hot-toast';
+
 export default function App() {
 
   const [isLargeScreen, setIsLargeScreen] = useState(false);
@@ -23,6 +25,10 @@ export default function App() {
 
   return (
     <>
+      <Toaster 
+        position="bottom-right"
+        reverseOrder={false}
+      />
       <Header />
       <div style={{ height: '100px' }}></div>
       <Intro />
