@@ -28,6 +28,11 @@ export const Content = styled(Container)`
     
 `;
 
+export const MobileContent = styled(Content)`
+    font-weight: 200;
+  `;  
+
+
 export const SubNav = styled(Content)`
 
     background-color: #B0A494;
@@ -133,4 +138,10 @@ export const FaleConosco = styled.span`
         font-weight: 300;
         font-size: 20px;
     }
+`;
+
+export const NavigationItem = styled.span`
+    font-size: 20px;
+    margin-right: 20px;
+   
 `;

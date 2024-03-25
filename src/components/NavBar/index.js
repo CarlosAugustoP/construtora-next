@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Container, Nav, MainLogo, Content, Span, A, SubNav, FaleConosco, Info, ContactLogo} from './styles';
+import { Container, Nav, MainLogo, Content, Span, A, SubNav, FaleConosco, Info, ContactLogo, MobileContent, NavigationItem} from './styles';
 
 
 
@@ -28,23 +28,21 @@ export default function Header() {
   );
 
   // Adjusted styles for Content component based on isMenuOpen and isLargeScreen
-  const contentStyle = isLargeScreen ? {} : {
-    transition: 'all 0.5s ease-in-out',
-    transform: isMenuOpen ? 'translateY(0)' : 'translateY(-100%)',
-    opacity: isMenuOpen ? 1 : 0,
-    display: 'flex',
-    flexDirection: 'column', // Stack the links vertically
-    alignItems: 'center', // Center-align the links for better presentation
-    maxHeight: isMenuOpen ? '1000px' : '0', // Use maxHeight for animation
+  const mobileContentStyle = {
+    transition: 'all 1.0s ease-in-out',
+    maxHeight: isMenuOpen ? '1000px' : '0', // Adjust as necessary
     overflow: 'hidden',
-    width: '100%'
+    width: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    height: '12vh',
+    // Remove position: 'absolute', top, left, right, zIndex properties
   };
-
   return (
     <div>
       <header>
         <Nav>
-          <Container style={{ justifyContent: 'space-between', paddingRight:'20px'}}>
+          <Container style={{ justifyContent: 'space-between', paddingRight: '20px' }}>
             <MainLogo src="/img/mainlogo.png" alt="Logo Peixoto e Vasconcelos" />
             {isLargeScreen ? (
               <>
@@ -59,11 +57,11 @@ export default function Header() {
             )}
           </Container>
           {!isLargeScreen && (
-            <Content style={contentStyle}>
-              <Span><A href="#Empreendimentos">Empreendimentos</A></Span>
-              <Span><A href="#QuemSomos">Quem Somos</A></Span>
-              <Span><A href="#Contato">Contato</A></Span>
-            </Content>
+            <MobileContent style={mobileContentStyle}>
+              <NavigationItem><A href="#Empreendimentos">Empreendimentos</A></NavigationItem>
+              <NavigationItem><A href="#QuemSomos">Quem Somos</A></NavigationItem>
+              <NavigationItem><A href="#Contato">Contato</A></NavigationItem>
+            </MobileContent>
           )}
           <SubNav>
           <FaleConosco>Fale Conosco!</FaleConosco>
@@ -104,4 +102,6 @@ export default function Header() {
       </header>
     </div>
   );
+
+  
 }
