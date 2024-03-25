@@ -35,11 +35,11 @@ export const ContentBox = styled.div`
 `;
 
 export const Title = styled.h1`
-    font-size: 45px;
     width: 80%;
+    font-size: 40px;
     
     @media (max-width: 942px) {
-        font-size: 30px;
+        font-size: 40px;
         line-height: 1.0;
     }
 `;
@@ -65,7 +65,7 @@ export const Colored = styled.span`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     @media (max-width: 942px) {
-        font-size: 40px;
+        font-size: 35px;
 
     }
 `;
