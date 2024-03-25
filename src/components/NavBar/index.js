@@ -29,7 +29,7 @@ export default function Header() {
 
   // Adjusted styles for Content component based on isMenuOpen and isLargeScreen
   const mobileContentStyle = {
-    transition: 'all 1.0s ease-in-out',
+    transition: isMenuOpen ?  'all 1s ease-in-out' : 'all 0.6s ease-in-out' ,
     maxHeight: isMenuOpen ? '1000px' : '0', // Adjust as necessary
     overflow: 'hidden',
     width: '100%',
