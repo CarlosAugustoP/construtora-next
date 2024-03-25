@@ -74,6 +74,7 @@ export const ContactLogo = styled.img`
 
         &:hover {
             animation: none;
+            transform:none;
             
         }
 

@@ -32,7 +32,7 @@ export const InputContainer = styled.div`
   grid-template-columns: 2fr 2fr ;
   align-items: center;
   justify-items: end;
-  gap: 40px;
+  gap: 20px;
   position: relative;
 
   @media (max-width: 942px) {
@@ -45,7 +45,7 @@ export const InputContainer = styled.div`
 `;
 
 export const InputField = styled.input`
-  width: 190px;
+  width: 220px;
   height: 20px;
   border: none;
   border-radius: 5px;
