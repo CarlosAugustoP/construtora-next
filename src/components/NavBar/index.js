@@ -35,7 +35,7 @@ export default function Header() {
     width: '100%',
     display: 'flex',
     flexDirection: 'column',
-    height: '100px',
+    height: '13vh',
     // Remove position: 'absolute', top, left, right, zIndex properties
   };
   return (
