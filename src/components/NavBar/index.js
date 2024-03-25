@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Container, Nav, MainLogo, Content, Span, A, SubNav, FaleConosco, Info} from './styles';
+import { Container, Nav, MainLogo, Content, Span, A, SubNav, FaleConosco, Info, ContactLogo} from './styles';
 
 
 
@@ -22,7 +22,7 @@ export default function Header() {
 
   const ContactInfo = ({ src, alt, children }) => (
     <span style={{ display: 'flex', gap: '5px', alignItems: 'center' }}>
-      <img src={src} alt={alt} style={{ marginLeft: '20px', width: isLargeScreen ? '20px' : '25px', height: isLargeScreen ? '20px' : '25px' }} />
+      <ContactLogo src={src} alt={alt} style={{ marginLeft: '20px', width: isLargeScreen ? '20px' : '25px', height: isLargeScreen ? '20px' : '25px' }} />
       {children}
     </span>
   );
