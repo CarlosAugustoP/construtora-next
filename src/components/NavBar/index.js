@@ -1,14 +1,8 @@
 import { useState, useEffect } from 'react';
-import { Container, Nav, MainLogo, Content, Span, A, SubNav, FaleConosco, Info, ContactLogo, MobileContent, NavigationItem} from './styles';
-
-
+import { Container, Nav, MainLogo, Content, Span, A, SubNav, FaleConosco, Info, ContactLogo, MobileContent, NavigationItem, CenterHamburger } from './styles';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
   const [isLargeScreen, setIsLargeScreen] = useState(false);
 
   useEffect(() => {
@@ -20,6 +14,10 @@ export default function Header() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   const ContactInfo = ({ src, alt, children }) => (
     <span style={{ display: 'flex', gap: '5px', alignItems: 'center' }}>
       <ContactLogo src={src} alt={alt} style={{ marginLeft: '20px', width: isLargeScreen ? '20px' : '25px', height: isLargeScreen ? '20px' : '25px' }} />
@@ -27,17 +25,39 @@ export default function Header() {
     </span>
   );
 
-  // Adjusted styles for Content component based on isMenuOpen and isLargeScreen
   const mobileContentStyle = {
-    transition: isMenuOpen ?  'all 1s ease-in-out' : 'all 0.6s ease-in-out' ,
+    transition: isMenuOpen ? 'all 1s ease-in-out' : 'all 0.6s ease-in-out',
     maxHeight: isMenuOpen ? '1000px' : '0', // Adjust as necessary
     overflow: 'hidden',
     width: '100%',
     display: 'flex',
     flexDirection: 'column',
-    height: '13vh',
-    // Remove position: 'absolute', top, left, right, zIndex properties
+    height: '100px',
+    
   };
+
+  const topDivStyle = {
+    width: '30px',
+    height: '6px',
+    backgroundColor: 'white',
+    transform: isMenuOpen ? 'rotate(45deg) translate(5px, 5px)' : 'none',
+    transition: 'transform 0.3s ease-in-out',
+  };
+  const middleDivStyle = {
+    width: '30px',
+    height: '6px',
+    backgroundColor: 'white',
+    opacity: isMenuOpen ? '0' : '1',
+    transition: 'opacity 0.3s ease-in-out',
+  };
+  const bottomDivStyle = {
+    width: '30px',
+    height: '6px',
+    backgroundColor: 'white',
+    transform: isMenuOpen ? 'rotate(-45deg) translate(7px, -6px)' : 'none',
+    transition: 'transform 0.3s ease-in-out',
+  };
+
   return (
     <div>
       <header>
@@ -45,15 +65,17 @@ export default function Header() {
           <Container style={{ justifyContent: 'space-between', paddingRight: '20px' }}>
             <MainLogo src="/img/mainlogo.png" alt="Logo Peixoto e Vasconcelos" />
             {isLargeScreen ? (
-              <>
-                <Content>
-                  <Span><A href="#Empreendimentos">Empreendimentos</A></Span>
-                  <Span><A href="#QuemSomos">Quem Somos</A></Span>
-                  <Span><A href="#Contato">Contato</A></Span>
-                </Content>
-              </>
+              <Content>
+                <Span><A href="#Empreendimentos">Empreendimentos</A></Span>
+                <Span><A href="#QuemSomos">Quem Somos</A></Span>
+                <Span><A href="#Contato">Contato</A></Span>
+              </Content>
             ) : (
-              <img onClick={toggleMenu} style={{ width: '40px', height: '40px', cursor: 'pointer' }} src="/img/Hamburger.svg" alt="Menu" />
+              <button onClick={toggleMenu} style={{ background: 'none', border: 'none', cursor: 'pointer', display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '8px',  width: '20px', height: '20px', marginRight: '20px'}}>
+                <div style={topDivStyle} />
+                <div style={middleDivStyle} />
+                <div style={bottomDivStyle} />
+              </button>
             )}
           </Container>
           {!isLargeScreen && (
