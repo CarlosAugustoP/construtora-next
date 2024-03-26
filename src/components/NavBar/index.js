@@ -53,7 +53,7 @@ export default function Header() {
     width: '30px',
     height: '6px',
     backgroundColor: 'white',
-    transform: isMenuOpen ? 'rotate(-45deg) translate(7px, -6px)' : 'none',
+    transform: isMenuOpen ? 'rotate(-45deg) translate(7px, -7px)' : 'none',
     transition: 'transform 0.3s ease-in-out',
   };
 
