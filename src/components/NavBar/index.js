@@ -33,7 +33,6 @@ export default function Header() {
     display: 'flex',
     flexDirection: 'column',
     height: '100px',
-    
   };
 
   const topDivStyle = {

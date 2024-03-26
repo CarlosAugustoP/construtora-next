@@ -13,12 +13,12 @@ export default function Footer() {
         )
     }
     return (
-        <div style = {{marginTop:"40px", fontFamily: "Arial"}}>
+        <div style = {{marginTop:"40px",  backgroundColor: 'black', fontSize: '14px', height: '200px'}}>
             <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: "column"}}>
-                <p>©2024 PEIXOTO & VASCONCELOS. TODOS OS DIREITOS RESERVADOS.</p>
+                <p style = {{textAlign: 'center', borderBottom: '1px solid white', padding: '10px'}}>©2024 Peixoto & Vasconcelos. Todos os direitos reservados.</p>
             </div>
-            <Container>
-                Website desenvolvido por:
+            <p style = {{textAlign: 'center', position: 'relative', bottom: '10px'}} >Website desenvolvido por:</p>
+            <Container> 
                <Credit name="Carlos Augusto" link="https://www.linkedin.com/in/carlos-augusto-vasconcelos-6472a3240/"/>    
                <Credit name="Gabriel Pires" link="https://www.linkedin.com/in/gabriel-pires-777106222/"/>
             </Container>
