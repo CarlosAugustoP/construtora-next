@@ -59,3 +59,36 @@ export const BigImageContainer = styled(ImageContainer)`
         cursor: default; 
     }
 `;
+
+export const CarousselContainer = styled.div`
+    display: flex;
+    overflow-x: auto; /* Habilita rolagem horizontal */
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* Melhora a rolagem em dispositivos touch */
+    scroll-padding-left: 24px; /* Ajusta o início da rolagem se necessário */
+    width: 100vw; /* Certifica que o contêiner não seja mais largo que a viewport */
+    margin: 0 auto; /* Centraliza o contêiner se não ocupar toda a largura */
+    scroll-behavior: smooth;
+    &::-webkit-scrollbar {
+        display: none; /* Esconde a barra de rolagem */
+    }
+`;
+
+export const CarousselItem = styled.div`
+    scroll-snap-align: start;
+    flex: 0 0 auto; /* Impede que o item do carrossel se expanda ou encolha */
+    width: 100vw; /* Define a largura de cada item do carrossel para a largura da viewport */
+    height: auto; /* Altura automática para se ajustar ao conteúdo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Posicionamento relativo para o conteúdo interno */
+    img {
+        width: 100%; /* Faz a imagem preencher a largura do item */
+        height: auto; /* Mantém a proporção da imagem ajustando a altura automaticamente */
+        object-fit: cover; /* Garante que a imagem cubra o espaço disponível sem distorção */
+    }
+`;
+
+
+
