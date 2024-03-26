@@ -145,3 +145,31 @@ export const NavigationItem = styled.span`
     margin-right: 20px;
    
 `;
+
+export const TopHamburger = styled.div `
+    width: 30px;
+    height: 2px;
+    background-color: white;
+
+`;
+
+export const CenterHamburger = styled.div`
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    @keyframes fadeOut {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+
+    animation-name: fadeOut;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transition: opacity 0.3s ease-in-out;
+`;
+
+export const BottomHamburger = styled(TopHamburger) ``;
