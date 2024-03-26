@@ -45,7 +45,7 @@ export const InputContainer = styled.div`
 `;
 
 export const InputField = styled.input`
-  width: 220px;
+  width: 200px;
   height: 20px;
   border: none;
   border-radius: 5px;
