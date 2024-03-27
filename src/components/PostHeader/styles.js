@@ -87,7 +87,7 @@ export const CarousselItem = styled.div`
     align-items: center;
     width:100%;
     img {
-        width: 80%; /* Faz a imagem preencher a largura do item */
+        width: 90%; /* Faz a imagem preencher a largura do item */
         height: auto; /* Mantém a proporção da imagem ajustando a altura automaticamente */
         object-fit: cover; /* Garante que a imagem cubra o espaço disponível sem distorção */
         border-radius: 25px;

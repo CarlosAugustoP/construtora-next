@@ -13,6 +13,7 @@ export const Container = styled.div`
         padding:10px;
         padding-bottom: 25px;
         gap:0px;
+        border-radius: 25px;
 
     }
 `;
@@ -35,9 +36,11 @@ export const Container = styled.div`
      height: auto;
      
      img {
-         width: 90%; /* Adjust image width on small screens */
+         width: 100%; /* Adjust image width on small screens */
          height: auto;
-         padding-top: 20px; /* Adjust image height automatically */
+         padding-top: 20px;
+         
+          /* Adjust image height automatically */
         
      }
  }
@@ -49,8 +52,7 @@ export const TextContainer = styled.div`
 
     @media (max-width: 942px) {
          /* Remove padding on small screens */
-            padding: 0;
-            width: 100%;
+            width: 90%;
             display: flex;
             flex-direction: column;
             align-items: center;
