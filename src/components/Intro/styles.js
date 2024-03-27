@@ -1,17 +1,20 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     position: relative;
-`;
+    
+    `;
 
 export const StyledImg = styled.img`
     width: 100%;
+   /* Increase the spread value to make the box shadow more noticeable */
 
     @media (max-width: 942px) {
         height: 600px;
-        object-fit: cover ;
-
+        object-fit: cover;
+        border-radius: 15px;
+        box-shadow: 10px 10px 4px 0px rgba(0, 0, 0, 0.25);
     }
 `;
 

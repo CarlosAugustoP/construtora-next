@@ -20,7 +20,7 @@ export default function Header() {
 
   const ContactInfo = ({ src, alt, children }) => (
     <span style={{ display: 'flex', gap: '5px', alignItems: 'center' }}>
-      <ContactLogo src={src} alt={alt} style={{ marginLeft: '20px', width: isLargeScreen ? '20px' : '25px', height: isLargeScreen ? '20px' : '25px' }} />
+        <ContactLogo src={src} alt={alt} style={{ marginLeft: '20px', width: isLargeScreen ? '20px' : '25px', height: isLargeScreen ? '20px' : '25px' }} />
       {children}
     </span>
   );
@@ -62,7 +62,9 @@ export default function Header() {
       <header>
         <Nav>
           <Container style={{ justifyContent: 'space-between', paddingRight: '20px' }}>
-            <MainLogo src="/img/mainlogo.png" alt="Logo Peixoto e Vasconcelos" />
+            <a href="#">
+              <MainLogo src="/img/mainlogo.png" alt="Logo Peixoto e Vasconcelos" />
+            </a>
             {isLargeScreen ? (
               <Content>
                 <Span><A href="#Empreendimentos">Empreendimentos</A></Span>
@@ -79,9 +81,9 @@ export default function Header() {
           </Container>
           {!isLargeScreen && (
             <MobileContent style={mobileContentStyle}>
-              <NavigationItem><A href="#Empreendimentos">Empreendimentos</A></NavigationItem>
-              <NavigationItem><A href="#QuemSomos">Quem Somos</A></NavigationItem>
-              <NavigationItem><A href="#Contato">Contato</A></NavigationItem>
+              <NavigationItem onClick = {toggleMenu}><A href="#Empreendimentos">Empreendimentos</A></NavigationItem>
+              <NavigationItem onClick = {toggleMenu}><A href="#QuemSomos">Quem Somos</A></NavigationItem>
+              <NavigationItem onClick = {toggleMenu}><A href="#Contato">Contato</A></NavigationItem>
             </MobileContent>
           )}
           <SubNav>

@@ -66,9 +66,10 @@ export const CarousselContainer = styled.div`
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch; /* Melhora a rolagem em dispositivos touch */
     scroll-padding-left: 24px; /* Ajusta o início da rolagem se necessário */
-    width: 100vw; /* Certifica que o contêiner não seja mais largo que a viewport */
+    width: 90%; /* Certifica que o contêiner não seja mais largo que a viewport */
     margin: 0 auto; /* Centraliza o contêiner se não ocupar toda a largura */
     scroll-behavior: smooth;
+    
     &::-webkit-scrollbar {
         display: none; /* Esconde a barra de rolagem */
     }
@@ -84,7 +85,7 @@ export const CarousselItem = styled.div`
     text-align: center;
     justify-content: center;
     align-items: center;
-    position: relative; /* Posicionamento relativo para o conteúdo interno */
+    width:100%;
     img {
         width: 80%; /* Faz a imagem preencher a largura do item */
         height: auto; /* Mantém a proporção da imagem ajustando a altura automaticamente */
