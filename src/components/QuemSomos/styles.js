@@ -13,7 +13,6 @@ export const Container = styled.div`
         padding:10px;
         padding-bottom: 25px;
         gap:0px;
-        border-radius: 25px;
 
     }
 `;

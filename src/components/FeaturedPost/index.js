@@ -47,7 +47,7 @@ const AnimatedImage = ({ src }) => {
     <animated.p style={{ ...animationProps, 
       direction: 'rtl',
       fontWeight: '200',
-      fontSize: '18px',
+      fontSize: '16px',
       paddingLeft:'12%',
       height: '66%',
 
@@ -94,7 +94,7 @@ export default function FeaturedPost() {
           <p style={{
             paddingLeft:'10%',
             height: '33%',
-            fontSize: '20px',
+            fontSize: '18px',
             fontWeight: '200',
           }}>{speech}</p>
           <br></br>
