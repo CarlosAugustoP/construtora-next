@@ -11,7 +11,7 @@ export default async function handler(req, res) {
     from: 'onboarding@resend.dev',
     to: 'gabrielpires2991@gmail.com',
     subject: 'Nova mensagem recebida!',
-    text: 'Hello',
+    text: `Nome: ${name}\nEmail: ${email}\nTelefone: ${telephone}\nMensagem: ${message}`,
   });
   if (error) {
     console.error('Failed to send email:', error);
