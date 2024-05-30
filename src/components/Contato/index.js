@@ -53,7 +53,7 @@ export default function Contato() {
 
   return (
     <Container id="Contato">
-      <ContentSection style={{ paddingBottom: "10px" }} imgSrc="img/branca.png" titleText="Fale Conosco!" direction="row-reverse" backgroundColor='rgb(238, 238, 238, 0.8)' color="black">
+      <ContentSection style={{ paddingBottom: "10px" }} imgSrc="img/porenquanto.jpeg" titleText="Fale Conosco!" direction="row-reverse" backgroundColor='rgb(238, 238, 238, 0.8)' color="black">
         <FormContainer onSubmit={handleSubmit}>
           <InputContainer>
             {inputFields.map(({ label, type, id, name, required }) => (
