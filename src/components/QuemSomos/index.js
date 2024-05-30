@@ -30,7 +30,7 @@ export const ContentSection = ({ imgSrc, titleText, children, direction = "row",
         alignItems: 'center', 
         marginTop: '100px'
       }}>
-        <ContentSection imgSrc="img/QuemSomosPhoto1.jpg" titleText="Quem Somos?" children={<Text>{firstText}</Text>} />
+        <ContentSection imgSrc="img/branca.png" titleText="Quem Somos?" children={<Text>{firstText}</Text>} />
       </div>
        <div style={{
         display: 'flex',
@@ -38,7 +38,7 @@ export const ContentSection = ({ imgSrc, titleText, children, direction = "row",
         alignItems: 'center', 
         marginTop: '50px'
       }}>
-        <ContentSection imgSrc="img/QuemSomosPhoto1.jpg" direction = "row-reverse" titleText="Nossa História"children={<Text>{secondText}</Text>} backgroundColor="rgb(238, 238, 238, 0.8)" color= "black"/>
+        <ContentSection imgSrc="img/branca.png" direction = "row-reverse" titleText="Nossa História"children={<Text>{secondText}</Text>} backgroundColor="rgb(238, 238, 238, 0.8)" color= "black"/>
       </div>
        <div style={{
         display: 'flex',
@@ -46,7 +46,7 @@ export const ContentSection = ({ imgSrc, titleText, children, direction = "row",
         alignItems: 'center', 
         marginTop: '40px'
       }}>
-        <ContentSection imgSrc="img/QuemSomosPhoto1.jpg" titleText="Nossos Valores" children={<Text>{thirdText}</Text>} />
+        <ContentSection imgSrc="img/branca.png" titleText="Nossos Valores" children={<Text>{thirdText}</Text>} />
       </div>
       </>
     );
