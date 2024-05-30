@@ -89,8 +89,7 @@ export const ContactLogo = styled.img`
 
 export const MainLogo = styled.img`
     margin-left: 20px;
-    width: 60px;
-    height: 60px;
+    width: 120px;
 `;
 
 export const Span = styled.span`
