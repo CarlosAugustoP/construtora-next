@@ -9,7 +9,7 @@ export default async function handler(req, res) {
 
   const { data, error } = await resend.emails.send({
     from: 'onboarding@resend.dev',
-    to: 'gabrielpires2991@gmail.com',
+    to: 'peixotoevasconcelosconstrutora@gmail.com',
     subject: 'Nova mensagem recebida!',
     text: `Nome: ${name}\nEmail: ${email}\nTelefone: ${telephone}\nMensagem: ${message}`,
   });
