@@ -3,13 +3,18 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
     padding-bottom: 50px;
     position: relative;
+
+    img {
+        object-fit: cover;
+    }
     
     `;
 
 export const StyledImg = styled.img`
     width: 100%;
+    height: 500px;
    /* Increase the spread value to make the box shadow more noticeable */
-
+    
     @media (max-width: 942px) {
         height: 600px;
         object-fit: cover;

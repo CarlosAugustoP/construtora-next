@@ -37,7 +37,7 @@ const AnimatedImage = ({ post, side }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const title = post.title;
-  const city = post.localização;
+  const city = post.city;
   const rooms = post.rooms;
   const highlightedPhrase = post.highlightedPhrase;
 

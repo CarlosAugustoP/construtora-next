@@ -107,7 +107,7 @@ export default function Header() {
               href="#Contato"
             >
               <ContactInfo src="/img/email-icon.svg" alt="Email de contato">
-                <Info>contato@peixotoevasconcelos.com</Info>
+                <Info>peixotoevasconcelosconstrutura@gmail.com</Info>
               </ContactInfo>
             </a>
             <a 
