@@ -29,7 +29,7 @@ export default function Contato() {
       body: JSON.stringify({ name: nome, email, telephone: telefone, message: mensagem }),
     });
 
-    if (response.ok) {
+    if (response.ok) { 
       console.log("Email enviado com sucesso!");
       setState({
         nome: '',
