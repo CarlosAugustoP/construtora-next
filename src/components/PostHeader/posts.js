@@ -83,10 +83,10 @@ export const posts2 = ([
   }, 
   {
     id : 6,
-    title: "Casa em Aldeia",
-    city: "Camaragibe - PE",
-    highlightedPhrase: "Linda e completa casa de campo",
-    image: "img/casa_aldeia_2.png",
+    title: "Casa em Gravatá",
+    city: "Gravatá - PE",
+    highlightedPhrase: "Linda e aconchegante casa de campo",
+    image: "img/casa1.jpeg",
   }
 ]);
 
@@ -95,74 +95,71 @@ export const posts3 = ([
     id : 1,
     title: "Casa em Gravatá",
     city: "Gravatá - PE",
-    highlightedPhrase: "Jardim e piscina vêm em conjunto com uma linda paisagem",
-    image: "img/prive_mont_blanc.png",
+    highlightedPhrase: "Varanda, área de lazer com piscina com uma bela paisagem",
+    image: "img/casa2.jpeg",
   },
   {
     id : 2,
-    title: "Casa em Toquinho",
-    city: "Sirinhaém - PE",
-    highlightedPhrase: "Casa espaçosa e completa",
-    image: "img/casa_toquinho_3.png",
+    title: "Casa em Gravatá",
+    city: "Gravatá - PE",
+    highlightedPhrase: "Casa aconchegante com um jardim agradável",
+    image: "img/casa3.jpeg",
   },
   {
     id : 3,
-    tipo: "Casa",
-    title: "title novo mundo",
-    city: "caruaru - PE",
-    highlightedPhrase: "Varanda com vista para o mar",
-    image: "img/TestImageHouse3.png",
+    title: "Casa em Gravatá",
+    city: "Gravatá - PE",
+    highlightedPhrase: "Casa espaçosa e aconchegante, além de um belo jardim",
+    image: "img/casa4.jpeg",
   },
   {
     id : 4,
-    tipo: "Casa",
-    title: "title novo mundo",
-    city: "Sei la",
-    highlightedPhrase: "Varanda com vista para o mar",
-    image: "img/TestImageHouse3.png",
+    title: "Casa em Gravatá",
+    city: "Gravatá - PE",
+    highlightedPhrase: "Possui uma ótima área de lazer com piscina e espaço para churrasco",
+    image: "img/casa5.jpeg",
   },
   {
     id : 5,
-    tipo: "Casa",
-    title: "title novo mundo",
-    city: "Sei la",
-    highlightedPhrase: "Varanda com vista para o mar",
-    image: "img/TestImageHouse3.png",
+    title: "Casa em Gravatá",
+    city: "Gravatá - PE",
+    highlightedPhrase: "Casa espaçosa com piscina e espaço para churrasco",
+    image: "img/casa6.jpeg",
   }, 
   {
     id : 6,
     tipo: "Casa",
-    title: "Bairro novo mundo",
-    city: "Sei la",
-    highlightedPhrase: "Varanda com vista para o mar",
-    image: "img/TestImageHouse3.png",
+    title: "Casa em Gravatá",
+    city: "Gravatá - PE",
+    highlightedPhrase: "Moderna, espaçosa e aconchegante",
+    image: "img/casa7.jpeg",
   }
 ]);
 
 export const highlightedPosts = ([
 {
   id: 1,
-  type: "Mansão",
-  district: "Bairro Gramado",
-  city: "Gravatá - PE",
-  image: "img/TestImageHouse.png",
-  description: " Essa bela mansão possui 4 quartos, 2 suítes, vista para as montanhas, piscina aquecida, amplo jardim e área gourmet"
+  type: "Casa",
+  district: "Caruaru",
+  city: "Caruaru - PE",
+  image: "img/casa_mais_top.jpeg",
+  description: "Admire a obra-prima da arquitetura moderna com seu design inovador e linhas elegantes"
 },
 {
   id : 2,
   type: "Casa",
   district: "indianópolis",
   city: "caruaru - PE",
-  image: "img/TestImageHouse2.png",
-  description: "Essa linda casa possui 3 quartos, 2 suítes, jardim de inverno, sala de jogos, espaço gourmet com churrasqueira"
+  image: "img/condominio_ville_champagne.png",
+  description: "Elegância minimalista em uma residência moderna com fachada de vidro e detalhes em madeira"
 },
 {
   id : 3,
   type: "Casa",
-  district: "indianópolis",
-  city: "caruaru - PE",
-  image: "img/TestImageHouse3.png",
-  description: "Esse perfeito lar possui 2 quartos, 1 suíte master com hidromassagem, cozinha planejada, quintal com espaço gourmet"
+  district: "Gravatá",
+  city: "Gravatá - PE",
+  image: "img/casa7.jpeg",
+  description: "Luxo e a sofisticação estão presentes nesta casa moderna de design arrojado, repleta de luz natural e acabamentos de alta qualidade"
 },
 ]);
 
