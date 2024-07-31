@@ -20,7 +20,7 @@ export default function Intro() {
 
     return (
         <Wrapper>
-            <StyledImg src={isScreenBiggerThan942px ? "img/hero2.jpeg" : "img/hero2.jpeg"} srcSet={isScreenBiggerThan942px ? "img/hero2.jpeg 942w" : "img/hero2.jpeg 942w"} alt="Parallax" />
+            <StyledImg src={isScreenBiggerThan942px ? "img/branca.png" : "img/branca.png"} srcSet={isScreenBiggerThan942px ? "img/hero2.jpeg 942w" : "img/hero2.jpeg 942w"} alt="Parallax" />
             <ContentBox>
                 <Title><Colored>O seu sonho é o nosso compromisso.</Colored></Title>
                 <a href="#Contato"><Button>Entre em contato</Button></a>

@@ -42,7 +42,7 @@ export const ContentBox = styled.div`
 `;
 
 export const Title = styled.h1`
-    width: 80%;
+    width: 70%;
     font-size: 40px;
     
     @media (max-width: 942px) {
