@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, ImageContainer, TextContainer, Text } from "./styles";
-const lorem ="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut ultricies mi. Sed erat lorem, porttitor eu mauris vitae, condimentum vulputate sem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis pretium ipsum nec dui fringilla, quis interdum tellus tristique. Mauris porttitor sapien quam, s. Cras et purus purus "
 const firstText = "A construtora Peixoto e Vasconcelos foi formada por um casal de engenheiro e arquiteta, que juntos criaram uma empresa que realizasse os sonhos de seus clientes, entregando obras de qualidade e com um design único. Desde então, Compromisso, competência e responsabilidade são a nossa marca. "
 const secondText = "Há 28 anos, conquistamos a confiança de clientes e parceiros pela qualidade de nossos projetos e pela transparência de nossa equipe. Com uma trajetória de sucesso, continuamos nossa jornada para pessoas de todo o Nordeste."
 const thirdText = "Construímos com integridade, excelência e respeito, buscando sempre superar as expectativas dos nossos clientes. Nosso compromisso com a qualidade e a transparência nos guia em cada projeto, sempre com uma abordagem centrada no cliente, empenhada em construir lares perfeitos, um projeto de cada vez."
@@ -30,7 +29,7 @@ export const ContentSection = ({ imgSrc, titleText, children, direction = "row",
         alignItems: 'center', 
         marginTop: '100px'
       }}>
-        <ContentSection imgSrc="img/provisorio.jpeg" titleText="Quem Somos?" children={<Text>{firstText}</Text>} />
+        <ContentSection imgSrc="img/casal.jpeg" titleText="Quem Somos?" children={<Text>{firstText}</Text>} />
       </div>
        <div style={{
         display: 'flex',
@@ -46,7 +45,7 @@ export const ContentSection = ({ imgSrc, titleText, children, direction = "row",
         alignItems: 'center', 
         marginTop: '40px'
       }}>
-        <ContentSection imgSrc="img/provisorio.jpeg" titleText="Nossos Valores" children={<Text>{thirdText}</Text>} />
+        <ContentSection imgSrc="img/finalimage.jpeg" titleText="Nossos Valores" children={<Text>{thirdText}</Text>} />
       </div>
       </>
     );

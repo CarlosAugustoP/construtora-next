@@ -3,6 +3,10 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
     padding-bottom: 50px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 
     img {
         object-fit: cover;
@@ -13,16 +17,15 @@ export const Wrapper = styled.div`
 export const StyledImg = styled.img`
     width: 100%;
     height: 500px;
-   /* Increase the spread value to make the box shadow more noticeable */
-    
+    object-fit: cover;
+    filter: grayscale(100%) brightness(0.6) contrast(0.9); /* Combined filters */
+    object-position: 50% 30%;
+    border: 0.1px solid white;
     @media (max-width: 942px) {
-        height: 600px;
-        object-fit: cover;
-        border-radius: 15px;
-        box-shadow: 10px 10px 4px 0px rgba(0, 0, 0, 0.25);
+        object-position: 50% 0%;
     }
-`;
 
+    `;
 export const ContentBox = styled.div`
     width: 50%;
     color: black;
@@ -36,7 +39,7 @@ export const ContentBox = styled.div`
     @media (max-width: 942px) {
         width: 80%;
         top: 20%;
-        left: 50%;
+        left: 43%;
         transform: translate(-50%, -50%);
     }
 `;
@@ -46,7 +49,7 @@ export const Title = styled.h1`
     font-size: 40px;
     
     @media (max-width: 942px) {
-        font-size: 40px;
+        font-size: 18px;
         line-height: 1.0;
     }
 `;
@@ -65,14 +68,18 @@ export const Button = styled.button`
         background: linear-gradient(to right, white, lightgrey);
         color: black;
     }
+
+    @media (max-width: 942px) {
+        font-size: 15px;
+    }
 `;
 
 export const Colored = styled.span`
-    background: linear-gradient(to right, black, grey);
+    background: linear-gradient(to right, white, lightgrey);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
     @media (max-width: 942px) {
         font-size: 35px;
-
     }
 `;

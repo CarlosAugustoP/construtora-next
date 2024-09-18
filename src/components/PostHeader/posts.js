@@ -148,7 +148,7 @@ export const highlightedPosts = ([
 {
   id : 2,
   type: "Casa",
-  district: "indianópolis",
+  district: "Caruaru",
   city: "caruaru - PE",
   image: "img/condominio_ville_champagne.png",
   description: "Elegância minimalista em uma residência moderna com fachada de vidro e detalhes em madeira"
