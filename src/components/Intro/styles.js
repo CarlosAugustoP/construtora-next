@@ -23,6 +23,7 @@ export const StyledImg = styled.img`
     border: 0.1px solid white;
     @media (max-width: 942px) {
         object-position: 50% 0%;
+        height:550px;
     }
 
     `;
@@ -37,10 +38,10 @@ export const ContentBox = styled.div`
     border-radius: 10px;
 
     @media (max-width: 942px) {
-        width: 80%;
+        width: 90%;
         top: 20%;
-        left: 43%;
-        transform: translate(-50%, -50%);
+        left: 50%;
+        transform: translate(-50%, 78%);
     }
 `;
 
@@ -55,7 +56,7 @@ export const Title = styled.h1`
 `;
 
 export const Button = styled.button`
-    background: linear-gradient(to right, black, #3A3A3A);
+    background-color: black;
     color: white;
     font-size: 20px;
     padding: 10px;

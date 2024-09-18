@@ -9,10 +9,12 @@ import Footer from '../Footer';
 import Test from '../NavBar/test';
 import {Mobile} from '../PostHeader/mobile'; 
 import { Toaster } from 'react-hot-toast';
+import dynamic from 'next/dynamic';
 
 export default function App() {
 
   const [isLargeScreen, setIsLargeScreen] = useState(false);
+  const NoSSRIntro = dynamic(() => import('../Intro'), { ssr: false });
   
   useEffect(() => {
     const handleResize = () => {
@@ -31,7 +33,7 @@ export default function App() {
       />
       <Header />
       <div style={{ height: '100px' }}></div>
-      <Intro />
+      <NoSSRIntro />
       {isLargeScreen ? (
         <>
           <FeaturedPost />
